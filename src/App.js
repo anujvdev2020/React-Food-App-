@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import { Home } from "./Components/Home";
 import { Menu } from "./Components/Menu";
+import { Contact } from "./Components/Contact";
 const App = () => {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/menu" element={<Menu />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
