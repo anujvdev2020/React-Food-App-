@@ -14,7 +14,7 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 export const Header = () => {
   const [openDrawer, setDrawer] = useState(false);
@@ -46,16 +46,16 @@ export const Header = () => {
               <List>
                 <ListItem key={"one"} disablePadding>
                   <ListItemButton>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                   </ListItemButton>
                 </ListItem>
                 <ListItem key={"two"} disablePadding>
                   <ListItemButton>
-                    <a href={"/menu"}>Menu</a>
+                    <Link to="/menu">Menu</Link>
                   </ListItemButton>
                 </ListItem>
                 <ListItem key={"three"}>
-                  <a href={"/contact"}>Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </ListItem>
                 {/* <ListItem key={""}>
                   <ListItemButton>Menu</ListItemButton>

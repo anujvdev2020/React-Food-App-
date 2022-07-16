@@ -12,9 +12,10 @@ const App = () => {
   return (
     <div className="App">
       {/* HEADER */}
-      <Header />
+     
       {/* <Home/> */}
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/menu" element={<Menu />}></Route>
